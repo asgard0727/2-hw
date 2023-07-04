@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: auto;
+
+    position: relative;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: blue;
+}
+.box::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: gold;
+    left: 70px;
+    bottom: 0px;
+    position: absolute;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    background: url(./pexels-any-lane-5945763.jpg) no-repeat center/cover;
+    margin: 30px auto;
+
+    position: relative;
+}
+.photo::before{
+    content: "Jane Doe";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(0);
+    transform-origin: left;
+
+    width: 180px;
+    height: 60px;
+    background: violet;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.photo:hover::before{
+    transform: translate(-50%, -50%) scaleX(1);
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: url(./pexels-any-lane-5945732.jpg) no-repeat center/cover fixed;
+    position: relative;    
+    overflow: hidden;
+    font-size: 30px;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -10%;
+    width: 60%;
+    height: 150%;
+    background: #fff;
+    transform: rotate(15deg);
+}
+.banner__text{
+    position: relative;
+    padding: 50px 10%;
+    width: 50%;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    background: #0000ff54;
+    transition: .5s;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #0000ff54;
+    transition: .5s;
+}
+.card:hover::before{
+    right: 100%;
+
+}
+.card:hover::after{
+    left: 100%;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

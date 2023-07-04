@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 500vh;
+}
+.navbar{
+    width: 100%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.collection{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: #444;
+    font-size: 13px;
+
+}
+.item{
+    padding: 20px;
+}
+.item:hover{
+    border-bottom: 3px solid greenyellow;
+    padding-bottom: 11px;
+}
+.navbar__second{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-size: 25px;
+}
+.fa-chevron-down{
+    color: green;
+}
+.navbar__second .item{
+    font-size: 18px;
+}
+.banner{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(/2023GPC_post-event_Acer_banner_Primary-Hero-XL.webp) no-repeat center/cover;
+}
+.fa-chevron-left ,
+.fa-chevron-right{
+    background: #f0f0f0;
+    padding: 20px;
+    color: greenyellow;
+    padding: 20px 25px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.fa-chevron-left:hover,
+.fa-chevron-right:hover{
+    background: greenyellow;
+    color: #fff;
+}
+.banner__text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    width: 500px;
+    margin-right: 700px;
+}
+.banner__text h1{
+    font-size: 40px;
+}
+.btn{
+    width: 200px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    border: none;
+    transition: .3s;
+}
+.btn:hover{
+    background: #000;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 70px;
+
+}
+.browse{
+    text-align: center;
+    padding: 50px;
+}
+.card{
+    text-align: center;
+}
+.card img{
+    width: 200px;
+
+}
+.card p{
+    padding-top: 20px;
+}
